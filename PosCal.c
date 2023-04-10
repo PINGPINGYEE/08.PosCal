@@ -70,6 +70,7 @@ int eval(const char* exp) {
 
 int main(void) {
 	char exp[MAX_SIZE];
+	printf("Postfix expression: ");
 	scanf_s("%s", exp, MAX_SIZE);
 	int result = eval(exp);
 	printf("Result: %d\n", result);
