@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <Windows.h>
 #define _CRT_SECURE_NO_WARNINGS
 
 #define MAX_SIZE 100
@@ -72,5 +73,6 @@ int main(void) {
 	scanf_s("%s", exp, MAX_SIZE);
 	int result = eval(exp);
 	printf("Result: %d\n", result);
+	system("pause");
 	return 0;
 }
